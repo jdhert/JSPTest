@@ -12,30 +12,42 @@ import java.io.PrintWriter;
 public class CalcServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/html;charset=UTF-8"); // 한글로 바꿔줌
+        resp.setContentType("text/html;charset=UTF-8");
         PrintWriter out = resp.getWriter();
-        int num1 = Integer.parseInt(req.getParameter("num1"));
-        int num2 = Integer.parseInt(req.getParameter("num2"));
+        String num1 = req.getParameter("num1");
+        String  num2 = req.getParameter("num2");
         String op = req.getParameter("op");
-        int result = 0;
-        out.println("<h1>계산기!!!</h1>\n");
+        out.println("<h1>입력값을 안넣었습니다!! 여기는 Calc 서블릿!!</h1>\n");
 
-        switch (op){
+        String result = "";
+        switch (op) {
             case "+":
-                out.println("<p>" + num1 + " + " + num2 + " = " + (num1 + num2) + "</p>");
+                result = plus(num1, num2);
                 break;
             case "-":
-                out.println("<p>" + num1 + " - " + num2 + " = " + (num1 - num2) + "</p>");
+                result = minus(num1, num2);
                 break;
             case "*":
-                out.println("<p>" + num1 + " X " + num2 + " = " + (num1 * num2) + "</p>");
+                result = multiply(num1, num2);
                 break;
             case "/":
-                out.println("<p>" + num1 + " / " + num2 + " = " + (num1 / num2) + "</p>");
-                break;
-            default:
+                result = divide(num1, num2);
                 break;
         }
+        req.setAttribute("result", result);
+        req.getRequestDispatcher("refactCalc.jsp").forward(req,resp);
 
+    }
+    private String plus(String num1, String num2) {
+        return String.valueOf(Integer.parseInt(num1) + Integer.parseInt(num2));
+    }
+    private String minus(String num1, String num2) {
+        return String.valueOf(Integer.parseInt(num1) - Integer.parseInt(num2));
+    }
+    private String multiply(String num1, String num2) {
+        return String.valueOf(Integer.parseInt(num1) * Integer.parseInt(num2));
+    }
+    private String divide(String num1, String num2) {
+        return String.valueOf(Integer.parseInt(num1) / Integer.parseInt(num2));
     }
 }
