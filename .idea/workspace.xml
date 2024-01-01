@@ -9,12 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3451e909-5182-4725-b088-d67e35e040ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/refactCalc.jsp" afterDir="false" />
+    <list default="true" id="3451e909-5182-4725-b088-d67e35e040ce" name="Changes" comment="!!!">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jspbasic/FindNumServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jspbasic/CalcServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jspbasic/CalcServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,12 +53,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 9.0.82.executor": "Run",
+    "Tomcat 서버.Tomcat 9.0.82.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ParkSeHan/IdeaSnapshots/Tomcat_9_0_82_2023_12_17_191304.jfr",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -72,7 +78,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.82" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.82" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="jsp-basic:war exploded">
           <settings>
@@ -153,9 +159,18 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="false" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="jsp-basic:war exploded" />
+        </option>
       </method>
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-3183f394aec4-d55de845" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -166,11 +181,30 @@
       <option name="presentableId" value="Default" />
       <updated>1700031042197</updated>
       <workItem from="1700031043269" duration="5213000" />
-      <workItem from="1700045376990" duration="857000" />
+      <workItem from="1700045376990" duration="1066000" />
+      <workItem from="1700285935007" duration="599000" />
+      <workItem from="1701500499643" duration="13000" />
+      <workItem from="1702110476132" duration="330000" />
+      <workItem from="1702793130556" duration="2516000" />
+      <workItem from="1702802838557" duration="4206000" />
+      <workItem from="1702808257661" duration="5925000" />
     </task>
+    <task id="LOCAL-00001" summary="!!!">
+      <option name="closed" value="true" />
+      <created>1700046434768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700046434768</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="!!!" />
   </component>
 </project>
